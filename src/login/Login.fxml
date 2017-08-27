@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<GridPane id="GridPane" prefHeight="300" prefWidth="450" vgap="25" hgap="25"
+ xmlns="http://javafx.com/javafx/8"
+  xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="login.LoginController">
+   
+   <children>
+   
+   		<Label fx:id="lblNome" layoutX="220" layoutY="200" text="Nome"
+   		GridPane.rowIndex="1" GridPane.columnIndex="2" />
+   		
+   		<Label fx:id="lblSenha" layoutX="220" layoutY="200" text="Senha"
+   		GridPane.rowIndex="2" GridPane.columnIndex="2" />
+   		
+   		<TextField fx:id="txtNome"  prefWidth="150"
+   		GridPane.rowIndex="1" GridPane.columnIndex="3" />
+   		
+   		<PasswordField  fx:id="txtSenha" prefWidth="150"
+   		GridPane.rowIndex="2" GridPane.columnIndex="3" />
+   		
+   		<Button fx:id="btnLogar" layoutX="200" layoutY="200" text="Logar" onAction="#Logar"
+   		prefWidth="100"
+   		GridPane.rowIndex="4" GridPane.columnIndex="3" GridPane.halignment="CENTER"/>
+   		
+   		<Button fx:id="btnSair" layoutX="250" layoutY="200" text="Sair" onAction="#Sair"
+   		prefWidth="100"
+   		GridPane.rowIndex="4" GridPane.columnIndex="4" />
+   		
+   		<Hyperlink fx:id="hlkSenha" layoutX="225" layoutY="250" text="Esqueceu sua senha?" onAction="#EsqueciSenha"
+   		GridPane.rowIndex="5" GridPane.columnIndex="4" />
+   
+   </children>
+  
+</GridPane>
